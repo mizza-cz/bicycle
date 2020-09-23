@@ -18,9 +18,25 @@ li{
 }
 
 body{
-
+   font-family: 'Lato', sans-serif;
+}
+.wrapper{
+   overflow: hidden;
+   min-height: 100%;
 }
 
 .container{
-   
+   max-width: 1130px;
+   padding: 0 15px;
+   margin: 0 auto; 
+}
+
+.page{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   top: 0;
+   left: 0;
+   display: flex;
+   flex-direction: column;
 }
