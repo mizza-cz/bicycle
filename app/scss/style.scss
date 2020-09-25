@@ -144,6 +144,15 @@
       background-color: rgba(100, 194, 158, .5);
       opacity: 0;
       visibility: hidden;
+      flex-direction: column;
+      span{
+         text-transform: uppercase;
+         color: #fff;
+         font-size: 14px;
+         font-weight: 700;
+         letter-spacing: 2.8px;
+         margin: 10px 0 0 0;
+      }
 
    }
    &__image{
@@ -154,14 +163,11 @@
       left: 0;
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: cener ;
+      background-position: center ;
    }
 }
 
 .brands{
-   &-last{
-      
-   }
    &-rev{
       .brands__col{
          order: 1;
@@ -202,5 +208,208 @@
       }
    }
 
+}
+
+
+.slider{
+   background-color: #f7f7f7;
+   padding: 120px 0 60px 0;
+   &__item{
+      text-align: center;
+   }
+   &__icon{
+      margin: 0 0 35px 0;
+      img{
+         margin: 0 auto;
+      }
+   }
+   &__text{
+      text-align: center;
+      color: #848789;
+      font-size: 24px;
+      font-style: italic;
+      line-height: 34px;
+   }
+   &__title{
+      color: #353738;
+      font-size: 18px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      span{
+         color: #848789;
+         font-weight: 300;
+      }
+   }
+}
+.slick-slider{
+   position: relative;
+}
+.slick-list{
+   overflow: hidden;
+}
+.slick-track{
+   display: flex;
+   align-items: flex-start;
+}
+.slick-dots{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 100px 0 0 0;
+   li{
+      margin: 0 5px;
+      &.slick-active{
+         button{
+            background-color: #a9afb3;
+            outline: none;
+         }
+      }
+      button{
+         font-size: 0;
+         width: 11px;
+         height: 11px;
+         border-radius: 50%;
+         border: 1px solid #c8c8c8;
+         background-color: transparent;
+      }
+   }
+}
+.shop{
+   &__footer{
+      background-color: #282f35;
+      padding: 75px 0;
+      text-align: center;
+   }
+   &__btn{
+      display: inline-block;
+      height: 50px;
+      line-height: 48px;
+      border: 1px solid rgba(255, 255, 255, .5);
+      letter-spacing: 2.8px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 60px;
+   }
+   &__body{
+      display: flex;
+   }
+   &__col{
+      flex: 0 1 16.666%;
+      &-big{
+         flex: 0 1 33.333%;
+      }
+   }
+}
+.block-shop{
+   &__row{
+      display: flex;
+   }
+   &__col{
+      flex: 0 1 50%;
+   }
+   &__item{
+      height: auto;
+      padding: 0 0 50% 0;
+      &-lit{
+         padding: 0 0 100% 0;
+      }
+      &-big{
+         padding: 0 0 200% 0;
+      }
+   }
+}
+
+.subscribe{
+   &__body{
+      max-width: 534px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 110px 0;
+   }
+   &__logo{
+      margin: 0 0 40px 0;
+   }
+   &__label{
+      color: #848789;
+      font-size: 24px;
+      font-style: italic;
+      margin: 0 0 35px 0;
+   }
+   &__form{
+      display: flex;
+   }
+   &__input{
+      flex: 1 1 auto;
+      padding: 0 8px 0 0;
+      input{
+         width: 100%;
+         height: 69px;
+         background-color: #fff;
+         border: 1px solid #d3d7d9;
+         padding: 0 28px;
+         font-size: 20px;
+         font-style: italic;
+         &::placeholder{
+            color: #929292;
+         }
+      }
+   }
+   &__btn{
+      flex: 0 0 126px;
+      button{
+         width: 100%;
+         height: 69px;
+         line-height: 69px;
+         color: #fff;
+         font-size: 24px;
+         text-transform: uppercase;
+         font-weight: 300;
+         background-color: #64c29e;
+         border: none;
+         cursor: pointer;
+      }
+   }
+}
+.footer{
+   background-color: #f7f7f7;
+   &__address{
+      color: #848789;
+      font-size: 14px;
+      line-height: 18px;
+      p{
+         &:first-child{
+            font-weight: 700;
+         }
+      }
+   }
+   &__row{
+      display: flex;
+      padding: 100px 0;
+      align-items: center;
+   }
+   &__col{
+      flex: 0 1 33.333%;
+       a + a {
+          margin-left: 15px;
+       }
+   }
+   &__social{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+.dev{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   &__text{
+      font-size: 14px;
+      font-style: italic;
+      color: #848789;
+      padding-right: 9px;
+   }
 }
 @import 'media';
