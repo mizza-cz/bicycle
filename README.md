@@ -1,2 +1,2 @@
-# bicycle.github.io/app
+# bicycle
 
